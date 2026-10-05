@@ -1,15 +1,11 @@
 window.WORK = {
   "code": "HANJI-01",
-  "title": "",
-  "artist": "",
+  "only": true,
+  "source": "HANJI-01.jpg",
   "images": [
     {
-      "file": "img1.jpg",
-      "ratio": "2520/3937",
-      "caption": ""
+      "file": "img1.jpg?v=7b015cc6",
+      "ratio": "2520/3937"
     }
-  ],
-  "intro": "",
-  "history": [],
-  "footer": "2026 안동 한지전시"
+  ]
 };

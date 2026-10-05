@@ -2,6 +2,7 @@
 var d=window.WORK||{};var app=document.getElementById('app');
 function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 document.title=(d.title||'작품 안내');
+if(d.only){document.body.className='only';var o='';(d.images||[]).forEach(function(im){o+='<div class="img" style="aspect-ratio:'+(im.ratio||'4/3')+';background-image:url(\''+esc(im.file)+'\')"></div>'});app.innerHTML=o;document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('dragstart',function(e){e.preventDefault()});return;}
 var h='<div class="no">'+esc(d.code)+'</div><h1>'+esc(d.title)+'</h1><div class="artist">'+esc(d.artist)+'</div>';
 (d.images||[]).forEach(function(im,i){h+='<div class="img" data-src="'+esc(im.file)+'" style="aspect-ratio:'+(im.ratio||'4/3')+';background-image:url(\''+esc(im.file)+'\')"></div>';
  if(im.caption)h+='<div class="cap">'+esc(im.caption)+'</div>';});
