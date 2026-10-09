@@ -4,7 +4,7 @@ window.WORK = {
   "source": "HANJI-02.jpg",
   "images": [
     {
-      "file": "img1.jpg?v=91b0281c",
+      "file": "img1.jpg?v=3af38daf",
       "ratio": "2520/3937"
     }
   ]
